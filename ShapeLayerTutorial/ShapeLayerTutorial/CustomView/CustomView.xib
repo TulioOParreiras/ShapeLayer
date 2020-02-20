@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomView" customModule="ShapeLayerTutorial" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CMk-7S-Odk">
+                    <rect key="frame" x="41.5" y="448" width="331" height="0.0"/>
+                    <subviews>
+                        <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GgQ-KS-YDc">
+                            <rect key="frame" x="0.0" y="0.0" width="331" height="0.0"/>
+                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="250" id="s9i-XK-ajd"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="GgQ-KS-YDc" firstAttribute="leading" secondItem="CMk-7S-Odk" secondAttribute="leading" id="7lW-7z-83z"/>
+                        <constraint firstItem="GgQ-KS-YDc" firstAttribute="top" secondItem="CMk-7S-Odk" secondAttribute="top" id="CdO-JS-COb"/>
+                        <constraint firstAttribute="bottom" secondItem="GgQ-KS-YDc" secondAttribute="bottom" id="VQA-dj-h9H"/>
+                        <constraint firstItem="GgQ-KS-YDc" firstAttribute="height" secondItem="CMk-7S-Odk" secondAttribute="height" id="Wke-Sy-hoa"/>
+                        <constraint firstAttribute="trailing" secondItem="GgQ-KS-YDc" secondAttribute="trailing" id="hlp-5V-tno"/>
+                        <constraint firstAttribute="height" priority="250" id="msW-Py-60H"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CMk-7S-Odk" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.8" id="9wN-Zz-aLB"/>
+                <constraint firstItem="CMk-7S-Odk" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Fg2-YY-Cb5"/>
+                <constraint firstItem="CMk-7S-Odk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="OLr-fa-2BE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="contentView" destination="CMk-7S-Odk" id="Nhc-qv-kg9"/>
+                <outlet property="stackView" destination="GgQ-KS-YDc" id="1fb-0X-axu"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="153.34821428571428"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_ShapeLayerTutorial {
+  umbrella header "Pods-ShapeLayerTutorial-umbrella.h"
+
+  export *
+  module * { export * }
+}
